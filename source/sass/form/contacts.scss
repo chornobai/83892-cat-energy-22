@@ -1,0 +1,130 @@
+.contacts {
+  padding: 0 20px 10px 20px;
+
+  legend {
+    padding: 25px 0 35px 0;
+  }
+}
+
+.contacts__list {
+  @include reset-list;
+  padding: 0;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  position: relative;
+
+  .input:focus + svg {
+    color: $green;
+  }
+
+  svg {
+    position: absolute;
+    right: 10px;
+    fill: none;
+  }
+
+  &:last-child {
+    svg {
+      right: 5px;
+    }
+  }
+}
+
+//error-input - ошибка в заполнении формы.
+
+.error-input {
+  .input {
+    border: 2px solid $error;
+  }
+
+  svg {
+    color: $error;
+  }
+}
+
+.contacts__label {
+  margin-right: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.contacts__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 0 13px 14px;
+
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    color: $dark-grey;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 0 66px 48px 70px;
+
+    legend {
+      padding: 27px 0 75px 0;
+    }
+  }
+
+  .contacts__item {
+    margin-bottom: 15px;
+  }
+
+  .contacts__label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 17px;
+  }
+
+  .contacts__input {
+    padding: 21px 0 15px 21px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &--phone {
+      padding-left: 13px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    grid-column: span 2;
+    padding: 0;
+    margin-bottom: 48px;
+
+    legend {
+      padding: 21px 0 75px 0;
+    }
+  }
+
+  .contacts__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 75px;
+  }
+
+  .contacts__label {
+    margin-right: 18px;
+  }
+
+  .contacts__item {
+    svg {
+      right: 15px;
+    }
+  }
+}

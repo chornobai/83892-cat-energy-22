@@ -1,1 +1,35 @@
-// Начните писать стили здесь
+// Global
+
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/mixin.scss";
+
+// Blocks
+
+@import "index/body.scss";
+@import "index/header.scss";
+@import "index/navigation.scss";
+@import "index/promo.scss";
+@import "index/option.scss";
+@import "index/benefits.scss";
+@import "index/example.scss";
+@import "index/result.scss";
+@import "index/demo.scss";
+@import "index/location.scss";
+@import "index/footer-bottom.scss";
+@import "index/footer-social.scss";
+@import "index/footer-logo.scss";
+@import "index/footer-copyright.scss";
+@import "form/program.scss";
+@import "form/main-form.scss";
+@import "form/introduce.scss";
+@import "form/choice.scss";
+@import "form/contacts.scss";
+@import "form/comment.scss";
+@import "form/add.scss";
+@import "catalog/products.scss";
+@import "catalog/cards.scss";
+@import "catalog/pagination.scss";
+@import "catalog/complement.scss";
+@import "catalog/gift.scss";

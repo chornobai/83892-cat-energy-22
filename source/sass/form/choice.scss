@@ -1,0 +1,105 @@
+.choice {
+  padding: 30px 20px 0 20px;
+  border-top: 1px solid  $grey-border-next;
+  border-bottom: 1px solid  $grey-border-next;
+}
+
+.choice__list {
+  @include reset-list;
+}
+
+.choice__item {
+  margin-bottom: 24px;
+}
+
+.choice__label {
+  display: block;
+  position: relative;
+  color: $black;
+  padding-left: 45px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.choice__input + label::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 1px solid $grey-border-next;
+  cursor: pointer;
+}
+
+.choice__input:hover + label::before {
+  border: 1px solid $grey-circle;
+}
+
+.choice__input:disabled + label::before {
+  opacity: 0.3;
+}
+
+.choice__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $green;
+  cursor: pointer;
+}
+
+.choice__input:disabled + label::after {
+  opacity: 0.3;
+}
+
+.choice__input:disabled ~ label {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .choice {
+    padding: 0 67px 0 70px;
+    border: none;
+    margin-bottom: 50px;
+  }
+
+  .choice__list {
+    border: 1px solid  $grey-border-next;
+    padding: 30px 20px 5px 43px;
+  }
+
+  .choice__item {
+    margin-bottom: 23px;
+  }
+
+  .choice__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .choice__input + label::before {
+    width: 39px;
+    height: 39px;
+    left: -17px;
+  }
+
+  .choice__input:checked + label::after {
+    width: 18px;
+    height: 18px;
+    left: -4px;
+    top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choice {
+    padding: 0;
+  }
+}

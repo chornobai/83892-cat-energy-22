@@ -1,0 +1,144 @@
+.add {
+  .program__form-legend {
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    &::before {
+      top: 17px;
+      right: -158px;
+      width: 136px;
+    }
+  }
+}
+
+.add__list {
+  @include reset-list;
+  padding: 20px 20px 14px 20px;
+}
+
+.add__item {
+  margin-bottom: 25px;
+}
+
+.add__label {
+  display: block;
+  color: $black;
+  padding-left: 46px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.add__input + label::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid $grey-border-next;
+  top: -5px;
+  left: 0;
+}
+
+.add__input:hover + label::before {
+  border: 1px solid $grey-circle;
+}
+
+.add__input:disabled + label::before {
+  opacity: 0.3;
+}
+
+.add__input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  top: 3px;
+  left: 7px;
+  background: url("../../img/icons/icon-checked.svg") no-repeat;
+}
+
+.add__input:disabled + label::after {
+  opacity: 0.3;
+}
+
+.add__input:disabled ~ label {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .add {
+    padding: 0 133px 0 70px;
+    margin-bottom: 34px;
+
+    .program__form-legend {
+      padding-bottom: 60px;
+      padding-left: 0;
+
+      &::before {
+        top: 20px;
+        right: -515px;
+        width: 478px;
+      }
+
+      &::after {
+        left: -70px;
+        top: 22px;
+        width: 30px;
+      }
+    }
+
+    .add__input + label::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    .add__input + label::after {
+      top: 8px;
+      left: 10px;
+    }
+  }
+
+  .add__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 120px;
+    grid-row-gap: 18px;
+  }
+
+  .add__label {
+    padding-left: 58px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add {
+    grid-column: span 2;
+    padding: 0;
+    margin-bottom: 42px;
+
+    .program__form-legend {
+      &::before {
+        top: 20px;
+        right: -1140px;
+        width: 1100px;
+      }
+
+      &::after {
+        left: -110px;
+        top: 22px;
+        width: 70px;
+      }
+    }
+  }
+
+  .add__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 80px;
+  }
+}

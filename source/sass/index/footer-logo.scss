@@ -1,0 +1,24 @@
+.footer__logo {
+  margin-bottom: 28px;
+}
+
+.footer__logo-link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__logo {
+    margin-bottom: 0;
+    margin-right: 26px;
+  }
+}

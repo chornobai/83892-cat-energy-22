@@ -1,0 +1,153 @@
+.navigation__list {
+  @include reset-list;
+  text-align: center;
+  padding-top: 12px;
+  display: none;
+}
+
+.navigation__item {
+  padding: 22px 0 20px 0;
+  border-top: 1px solid $light-grey;
+
+  &:last-child {
+    padding-bottom: 20px;
+  }
+}
+
+.navigation__link {
+  color: $black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation-button {
+  position: absolute;
+  top: 21px;
+  right: 18px;
+  border: none;
+  width: 24px;
+  height: 20px;
+  background: transparent url("../img/icons/burger_mobile.svg") no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+// no-js -открытое меню без js
+
+.no-js {
+  .navigation-button {
+    display: none;
+  }
+
+  .navigation__list {
+    display: block;
+  }
+}
+
+// navigation--open - меню-js
+
+.navigation--open {
+  .navigation__list {
+    display: block;
+  }
+
+  .navigation-button {
+    top: 22px;
+    right: 20px;
+    background: transparent url("../img/icons/cross.svg") no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation .navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+
+  .navigation__item {
+    margin-right: 35px;
+    border: none;
+
+    &:last-child {
+      padding-bottom: 20px;
+      margin-right: 0;
+      border: none;
+    }
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 8px;
+  }
+
+  .active {
+    border-bottom: 2px solid $green;
+  }
+
+  .navigation-button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__link {
+    color: $white;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 6px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid $white;
+  }
+
+  .navigation__list {
+    &--pages {
+      .navigation__link {
+        color: $black;
+      }
+
+      .active {
+        border-bottom: 2px solid $green;
+      }
+    }
+  }
+}

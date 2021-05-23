@@ -1,0 +1,232 @@
+.complement {
+  padding: 5px 20px 0 20px;
+}
+
+.complement__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $black;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 2px;
+    top: 15px;
+    right: -20px;
+    background-color: $green;
+  }
+}
+
+.complement__list {
+  @include reset-list;
+}
+
+.complement-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid $grey-border-next;
+  padding-bottom: 4px;
+
+  &:last-child {
+    padding-bottom: 44px;
+  }
+}
+
+.complement__list-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  flex-basis: 100%;
+  color: $black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 13px 0 10px 0;
+  text-transform: uppercase;
+}
+
+.complement__quantity {
+  margin: 0;
+}
+
+.complement__price {
+  margin: 0;
+}
+
+.complement__button {
+  flex-basis: 100%;
+  text-align: center;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $white;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 13px 0 14px 0;
+  background: $green;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $greeny;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .complement {
+    padding: 0 30px;
+  }
+
+  .complement__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 0 0 37px;
+    margin-bottom: 79px;
+
+    &::after {
+      width: 328px;
+      height: 2px;
+      top: 22px;
+      right: -30px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 22px;
+      left: -30px;
+      background: $green;
+    }
+  }
+
+  .complement__list {
+    border: 1px solid $grey-border-next;
+    padding: 0;
+    margin-bottom: 69px;
+  }
+
+  .complement-item {
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $grey-border-next;
+    border-top: none;
+    padding: 26px 37px 26px 37px;
+    box-sizing: border-box;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 26px;
+    }
+  }
+
+  .complement__list-title {
+    flex-basis: auto;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 26px 0;
+  }
+
+  .complement__quantity {
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .complement__price {
+    text-align: right;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .complement__button {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .complement {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 78px;
+    margin-bottom: 82px;
+    position: relative;
+    padding: 5px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: $green;
+      top: 26px;
+      z-index: -1;
+    }
+  }
+
+  .complement__title {
+    font-size: 36px;
+    line-height: 36px;
+    grid-column: span 2;
+    grid-row: 1/2;
+    justify-self: start;
+    margin: 0 0 80px 70px;
+    padding: 0 38px;
+    background: $white;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .complement-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr;
+    padding: 10px 0 1px 0;
+    border-bottom: 1px solid $grey-border-next;
+    align-items: baseline;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .complement__list {
+    margin: 0 0 0 110px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .complement__button {
+    flex-basis: auto;
+    padding: 10px 36px 8px 36px;
+    margin-left: 40px;
+    margin-top: 6px;
+  }
+
+  .complement__quantity {
+    margin: 0;
+    padding-left: 40px;
+  }
+
+  .complement__price {
+    @include reset;
+  }
+}

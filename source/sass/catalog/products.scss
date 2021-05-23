@@ -1,0 +1,32 @@
+.products {
+  padding: 28px 0 0 0;
+}
+
+.products__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+  margin: 0 0 40px 0;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    padding: 0 30px;
+  }
+
+  .products__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin-bottom: 165px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    padding: 0 110px;
+  }
+}

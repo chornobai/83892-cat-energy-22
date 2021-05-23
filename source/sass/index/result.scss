@@ -1,0 +1,129 @@
+.result {
+  @include reset-list;
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 31px;
+  margin-bottom: 27px;
+  padding: 0 20px;
+}
+
+.result__item {
+  text-align: center;
+  border: 1px solid $grey-border-next;
+  border-radius: 3px;
+  padding: 15px 0 18px 0;
+  position: relative;
+
+  &:last-child {
+    border: none;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding: 23px 0 0 0;
+  }
+}
+
+.result__status {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $black;
+  font-size: 24px;
+  list-style: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include reset;
+}
+
+.result__describe {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $bg-grey-next;
+  padding: 0 15px;
+  text-transform: lowercase;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.result__costs {
+  color: $black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .result {
+    grid-template-columns: 162px 162px auto;
+    grid-template-rows: auto;
+    grid-column-gap: 42px;
+    align-items: first-baseline;
+    padding: 0 30px;
+    margin-bottom: 62px;
+  }
+
+  .result__item {
+    padding-bottom: 20px;
+
+    &:last-child {
+      padding-left: 120px;
+      padding-top: 10px;
+      margin: 0;
+      grid-column: 3/4;
+      grid-row: 1/2;
+      font-size: 20px;
+
+      text-align: right;
+    }
+  }
+
+  .result__status {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .result__describe {
+    width: 130px;
+    margin-top: 12px;
+    background: $white;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    z-index: 2;
+  }
+
+  .result__costs {
+    margin: 0;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result {
+    grid-template-columns: 162px 162px;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 42px;
+    align-items: center;
+    padding: 0 0 0 110px;
+  }
+
+  .result__item {
+    &:last-child {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      text-align: left;
+      padding: 53px 0 0 0;
+
+      span {
+        margin-left: 59px;
+      }
+    }
+  }
+
+  .result__describe {
+    background: $bg-grey;
+  }
+}
