@@ -11,3 +11,27 @@
   color: $dark-grey;
   background: $white;
 }
+
+@media (min-width: $desktop-width) {
+  .body {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      min-height: 694px;
+      top: 0;
+      right: 0;
+      background: $green url("../img/bg/green-cat-desktop.jpg") no-repeat;
+      background-size: cover;
+      z-index: -3;
+    }
+
+    &--pages {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

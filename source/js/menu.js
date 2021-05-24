@@ -1,9 +1,9 @@
-const menu = document.querySelector ('.navigation');
-const buttonMenu = document.querySelector ('.navigation-button');
+const menu = document.querySelector(".navigation");
+const buttonMenu = document.querySelector(".navigation-button");
 
-menu.classList.remove('no-js');
+menu.classList.remove("no-js");
 
-buttonMenu.addEventListener('click', function(evt){
+buttonMenu.addEventListener("click", function (evt) {
   evt.preventDefault();
-    menu.classList.toggle('navigation--open');
+  menu.classList.toggle("navigation--open");
 });

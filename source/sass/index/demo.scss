@@ -64,7 +64,19 @@
 @media (min-width: $tablet-width) {
   .demo {
     padding-bottom: 58px;
-    background: linear-gradient(180deg, $white 29%, $light-grey 29%);
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 105%;
+      width: 100vw;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(180deg, $white 29%, $light-grey 29%);
+      z-index: -2;
+    }
   }
 
   .demo__toggle {
@@ -154,6 +166,18 @@
 
     padding-bottom: 0;
     background: transparent;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 105%;
+      width: 100vw;
+      top: 0;
+      right: 50%;
+      transform: translateX(-1%);
+      background: linear-gradient(180deg, $white 29%, $bg-grey 29%);
+      z-index: -1;
+    }
   }
 
   .demo__picture {

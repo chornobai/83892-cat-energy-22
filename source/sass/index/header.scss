@@ -40,28 +40,28 @@
   .header {
     padding: 48px 110px 0 110px;
     margin-bottom: 103px;
-    position: relative;
+    // position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 720px;
-      height: 694px;
-      top: 0;
-      right: 0;
-      background-image: url("../img/bg/green-cat-desktop.jpg");
-      background-size: cover;
-      z-index: -2;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width:50%;
+    //   min-height: 694px;
+    //   top: 0;
+    //   right: 0;
+    //   background-image: url("../img/bg/green-cat-desktop.jpg");
+    //   background-size: cover;
+    //   z-index: -1;
+    // }
 
-    @media (min-resolution: 2dppx) {
-      header {
-        &::after {
-          background: url("../img/background/bg-mobile@2x.jpg") no-repeat;
-          background-size: cover;
-        }
-      }
-    }
+    // @media (min-resolution: 2dppx) {
+    //   header {
+    //     &::after {
+    //       background: url("../img/bg/green-cat-desktop@2x.jpg") no-repeat;
+    //       background-size: cover;
+    //     }
+    //   }
+    // }
 
     &--pages {
       margin-bottom: 68px;

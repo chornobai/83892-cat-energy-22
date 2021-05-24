@@ -12,8 +12,8 @@
 </head>
 
 <body class="body">
-  <div class="container">
 
+      <div class="container">
     <header class="header">
       <a class="header__logo">
         <picture>
@@ -40,6 +40,13 @@
             питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/content/index-can-desktop.webp 1x, img/content/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/content/index-can-tablet.webp 1x, img/content/index-can-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/content/index-can-mobile.webp 1x, img/content/index-can-mobile@2x.webp 2x">
+
             <source media="(min-width: 1440px)"
               srcset="img/content/index-can-desktop.png 1x, img/content/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
@@ -114,6 +121,13 @@
         <div class="example__demo demo">
           <div class="demo__picture">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/content/before-desktop.webp 1x, img/content/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/before-tablet-1.webp 1x, img/content/before-tablet-1@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/before-mobile-1.webp 1x, img/content/before-mobile-1@2x.webp 2x">
+
               <source media="(min-width: 1440px)"
                 srcset="img/content/before-desktop.png 1x, img/content/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
@@ -123,6 +137,14 @@
                 height="232">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/content/after-desktop.webp 1x, img/content/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/after-tablet.webp 1x, img/content/after-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/after-mobile-1.webp 1x, img/content/after-mobile-1@2x.webp 2x">
+
+
               <source media="(min-width: 1440px)"
                 srcset="img/content/after-desktop.png 1x, img/content/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
@@ -160,7 +182,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2061370942233!2d30.321604830065535!3d59.93902610493592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sjo!4v1620395001143!5m2!1sru!2sjo"
         width="320" height="362" loading="lazy" style="border: 0;" allowfullscreen></iframe>
     </section>
-    <div class="container">
+
       <section class="footer__bottom">
 
         <h2 class="visually-hidden">Общая информация Cat Energy</h2>
@@ -194,7 +216,7 @@
         </div>
 
       </section>
-    </div>
+
   </footer>
 
   <script src="js/script.min.js"></script>

@@ -15,10 +15,10 @@
   &::after {
     content: "";
     position: absolute;
-    width: 53px;
+    width: 100vw;
     height: 2px;
     top: 15px;
-    right: -20px;
+    left: 245px;
     background-color: $green;
   }
 }
@@ -94,19 +94,19 @@
     margin-bottom: 79px;
 
     &::after {
-      width: 328px;
+      width: 100vw;
       height: 2px;
       top: 22px;
-      right: -30px;
+      left: 415px;
     }
 
     &::before {
       content: "";
       position: absolute;
-      width: 30px;
+      width: 100vw;
       height: 2px;
       top: 22px;
-      left: -30px;
+      right: 700px;
       background: $green;
     }
   }
@@ -169,11 +169,21 @@
     &::after {
       content: "";
       position: absolute;
-      width: 100%;
+      width: 100vw;
       height: 2px;
       background: $green;
       top: 26px;
       z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 2px;
+      top: 26px;
+      right: 0;
+      background: $green;
     }
   }
 
