@@ -66,10 +66,11 @@
     padding-bottom: 58px;
     position: relative;
 
+
     &::after {
       position: absolute;
       content: "";
-      height: 105%;
+      height: 103%;
       width: 100vw;
       top: 0;
       left: 50%;

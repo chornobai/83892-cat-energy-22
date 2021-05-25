@@ -10,6 +10,7 @@
   text-align: left;
   color: $dark-grey;
   background: $white;
+  overflow-x: hidden;
 }
 
 @media (min-width: $desktop-width) {
@@ -23,8 +24,8 @@
       min-height: 694px;
       top: 0;
       right: 0;
-      background: $green url("../img/bg/green-cat-desktop.jpg") no-repeat;
-      background-size: cover;
+      background: $green-next url("../img/bg/green-cat-desktop.jpg") no-repeat right;
+      background-size: auto 694px;
       z-index: -3;
     }
 
