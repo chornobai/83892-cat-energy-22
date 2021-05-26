@@ -1,7 +1,7 @@
 .choice {
   padding: 30px 20px 0 20px;
-  border-top: 1px solid  $grey-border-next;
-  border-bottom: 1px solid  $grey-border-next;
+  border-top: 1px solid $grey-border-next;
+  border-bottom: 1px solid $grey-border-next;
 }
 
 .choice__list {
@@ -39,6 +39,10 @@
   border: 1px solid $grey-circle;
 }
 
+.choice__input:focus + label::before {
+  box-shadow: 0 0 3px $green;
+}
+
 .choice__input:disabled + label::before {
   opacity: 0.3;
 }
@@ -71,8 +75,8 @@
   }
 
   .choice__list {
-    border: 1px solid  $grey-border-next;
-    padding: 30px 20px 5px 43px;
+    border: 1px solid $grey-border-next;
+    padding: 31px 20px 5px 43px;
   }
 
   .choice__item {
@@ -93,7 +97,7 @@
   .choice__input:checked + label::after {
     width: 18px;
     height: 18px;
-    left: -4px;
+    left: -5px;
     top: 5px;
   }
 }

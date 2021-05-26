@@ -30,15 +30,18 @@
 }
 
 .pagination__button-total {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
   width: 100%;
   padding: 11px 0;
   border: none;
   color: $dark-grey;
-  font-family: "Oswald", "Arial", sans-serif;
+
   background: $bg-grey;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
 
   &:hover {

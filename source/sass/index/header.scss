@@ -1,5 +1,5 @@
 .header {
-  padding: 12px 0 0 0;
+  padding: 12px 0 13px 0;
   position: relative;
 }
 
@@ -24,6 +24,10 @@
     align-items: center;
     padding: 19px 30px 19px 30px;
     margin-bottom: 36px;
+
+    &--pages {
+      margin-bottom: 14px;
+    }
   }
 
   .header__top {
@@ -40,28 +44,7 @@
   .header {
     padding: 48px 110px 0 110px;
     margin-bottom: 103px;
-    // position: relative;
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   width:50%;
-    //   min-height: 694px;
-    //   top: 0;
-    //   right: 0;
-    //   background-image: url("../img/bg/green-cat-desktop.jpg");
-    //   background-size: cover;
-    //   z-index: -1;
-    // }
-
-    // @media (min-resolution: 2dppx) {
-    //   header {
-    //     &::after {
-    //       background: url("../img/bg/green-cat-desktop@2x.jpg") no-repeat;
-    //       background-size: cover;
-    //     }
-    //   }
-    // }
+    justify-content: flex-start;
 
     &--pages {
       margin-bottom: 68px;

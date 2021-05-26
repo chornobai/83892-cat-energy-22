@@ -19,6 +19,11 @@
   }
 }
 
+.cards__info-link {
+  text-decoration: none;
+  color: $black;
+}
+
 .cards__picture {
   display: flex;
   align-items: center;

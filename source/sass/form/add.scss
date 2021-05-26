@@ -1,17 +1,15 @@
-.add {
-  .program__form-legend {
-    padding-bottom: 20px;
-    padding-left: 20px;
+.add__legend {
+  padding-bottom: 20px;
+  padding-left: 20px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 16px;
-      left: 188px;
-      width: 100vw;
-      height: 2px;
-      background: $green;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 188px;
+    width: 100vw;
+    height: 2px;
+    background: $green;
   }
 }
 
@@ -48,6 +46,10 @@
   border: 1px solid $grey-circle;
 }
 
+.add__input:focus + label::before {
+  box-shadow: 0 0 3px $green;
+}
+
 .add__input:disabled + label::before {
   opacity: 0.3;
 }
@@ -75,14 +77,14 @@
     padding: 0 133px 0 70px;
     margin-bottom: 34px;
 
-    .program__form-legend {
+    .add__legend {
       padding-bottom: 60px;
       padding-left: 0;
 
       &::after {
         content: "";
         position: absolute;
-        top: 16px;
+        top: 19px;
         left: 250px;
         width: 100vw;
         height: 2px;
@@ -92,7 +94,7 @@
       &::before {
         content: "";
         position: absolute;
-        top: 16px;
+        top: 19px;
         right: 250px;
         width: 100vw;
         height: 2px;
@@ -107,7 +109,7 @@
 
     .add__input + label::after {
       top: 8px;
-      left: 10px;
+      left: 12px;
     }
   }
 
@@ -133,7 +135,7 @@
     padding: 0;
     margin-bottom: 42px;
 
-    .program__form-legend {
+    .add__legend {
       &::after {
         content: "";
         position: absolute;

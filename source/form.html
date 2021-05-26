@@ -35,23 +35,23 @@
       <h1 class="visually-hidden">Анкета для подбора питания</h1>
       <section class="program">
         <h2 class="program__title">Подбор программы</h2>
-        <p class="program__text">Заполните анкету, и мы подберем <br>
+        <p class="program__text">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
         <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="program__form-fieldset introduce">
             <legend class="visually-hidden">Имя, вес, возраст</legend>
             <ul class="introduce__list">
-              <li class="introduce__item">
+              <li class="introduce__item ">
                 <label class="introduce__label" for="name">ИМЯ:*</label>
-                <input class="input introduce__input" id="name" name="name" type="text" placeholder="Барсик">
+                <input class="introduce__input" id="name" name="name" type="text" placeholder="Барсик">
               </li>
               <li class="introduce__item">
                 <label class="introduce__label" for="weight">Вес (кг):*</label>
-                <input class="input introduce__input" id="weight" name="weight" type="number" placeholder="7">
+                <input class="introduce__input" id="weight" name="weight" type="number" placeholder="7">
               </li>
               <li class="introduce__item">
                 <label class="introduce__label" for="age">Возраст (лет):</label>
-                <input class="input introduce__input" id="age" name="age" type="number" placeholder="7">
+                <input class="introduce__input" id="age" name="age" type="number" placeholder="7">
               </li>
             </ul>
 
@@ -60,21 +60,24 @@
             <legend class="visually-hidden">Выберите программу</legend>
             <ul class="choice__list">
               <li class="choice__item">
-                <input class="visually-hidden choice__input" type="radio" id="slim" name="program-name" checked>
+                <input class="visually-hidden choice__input" type="radio" id="slim" name="program-name"
+                  value="slim-program" checked>
                 <label class="choice__label" for="slim">Похудение</label>
               </li>
               <li class="choice__item">
-                <input class="visually-hidden choice__input" type="radio" id="fat" name="program-name">
+                <input class="visually-hidden choice__input" type="radio" id="fat" name="program-name"
+                  value="fat-program">
                 <label class="choice__label" for="fat">Набор массы</label>
               </li>
               <li class="choice__item">
-                <input class="visually-hidden choice__input" type="radio" id="advice" name="program-name" disabled>
+                <input class="visually-hidden choice__input" type="radio" id="advice" name="program-name"
+                  value="advice-program" disabled>
                 <label class="choice__label" for="advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="program__form-fieldset contacts">
-            <legend class="program__form-legend">Контактные данные
+            <legend class="program__form-legend contacts__legend">Контактные данные
               (владельца кота)</legend>
             <ul class="contacts__list">
               <li class="contacts__item">
@@ -96,13 +99,13 @@
             </ul>
           </fieldset>
           <fieldset class="program__form-fieldset comment">
-            <legend class="program__form-legend">Комментарий</legend>
+            <legend class="program__form-legend comment__legend">Комментарий</legend>
             <label class="visually-hidden" for="comment-box"></label>
             <textarea class="comment__textarea" id="comment-box" name="comment-box" cols="30" rows="9"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
           <fieldset class="program__form-fieldset add">
-            <legend class="program__form-legend">Дополнительно</legend>
+            <legend class="program__form-legend add__legend">Дополнительно</legend>
             <ul class="add__list">
               <li class="add__item">
                 <input class="visually-hidden add__input" type="checkbox" id="sweetener" name="sweetener" checked>
@@ -130,10 +133,10 @@
       </section>
 
     </main>
-</div>
+  </div>
   <footer class="footer">
     <section class="footer__location location">
-<div class="container">
+      <div class="container">
         <h2 class="visually-hidden">Адрес Cat energy</h2>
         <div class="location__info">
           <p class="location__info-trade">Приглашаем <br>
@@ -142,13 +145,13 @@
             Конюшенная, д. 19/8
             <span class="space">Санкт-Петербург</span>
           </p>
-</div>
+        </div>
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2061370942233!2d30.321604830065535!3d59.93902610493592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sjo!4v1620395001143!5m2!1sru!2sjo"
         width="320" height="362" loading="lazy" style="border: 0;" allowfullscreen></iframe>
     </section>
-<div class="container">
+    <div class="container">
       <section class="footer__bottom">
         <h2 class="visually-hidden">Общая информация Cat Energy</h2>
         <div class="footer__logo">
@@ -183,7 +186,7 @@
       </section>
     </div>
   </footer>
-</div>
+
   <script src="js/script.min.js"></script>
 </body>
 

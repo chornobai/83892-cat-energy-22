@@ -1,5 +1,6 @@
 .complement {
   padding: 5px 20px 0 20px;
+  overflow-x: hidden;
 }
 
 .complement__title {
@@ -91,6 +92,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 0 0 37px;
+    margin-top: 0;
     margin-bottom: 79px;
 
     &::after {

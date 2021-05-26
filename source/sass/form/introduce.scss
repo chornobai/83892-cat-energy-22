@@ -1,5 +1,5 @@
 .introduce {
-  padding: 23px 20px 8px 20px;
+  padding: 24px 20px 12px 20px;
   box-sizing: border-box;
   border: none;
 }
@@ -15,6 +15,18 @@
   justify-content: flex-start;
   margin-bottom: 13px;
   box-sizing: border-box;
+
+  &:nth-child(2) {
+    .introduce__label {
+      margin-right: 16px;
+    }
+  }
+
+  &:nth-child(3) {
+    .introduce__label {
+      margin-right: 16px;
+    }
+  }
 }
 
 .introduce__label {
@@ -26,18 +38,68 @@
 }
 
 .introduce__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  border: 1px solid $border;
+  box-sizing: border-box;
   width: 100%;
-  padding: 14px 0 13px 14px;
+  padding: 13px 0 12px 14px;
+
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $dark-grey;
+  }
+
+  &:hover {
+    outline: 1px solid $grey-border-next;
+  }
+
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
+}
+//error-input - ошибка в заполнении формы.
+
+.error-input {
+  .introduce__input {
+    border: 2px solid $error;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .introduce {
     padding: 0 67px 0 71px;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   .introduce__item {
     margin-bottom: 19px;
+
+    &:nth-child(2) {
+      .introduce__label {
+        margin-right: 19px;
+      }
+
+      .introduce__input {
+        padding-left: 18px;
+      }
+    }
+
+    &:nth-child(3) {
+      .introduce__label {
+        margin-right: 17px;
+      }
+
+      .introduce__input {
+        padding-left: 18px;
+      }
+    }
   }
 
   .introduce__label {

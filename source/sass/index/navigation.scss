@@ -10,7 +10,7 @@
   border-top: 1px solid $light-grey;
 
   &:last-child {
-    padding-bottom: 20px;
+    padding-bottom: 7px;
   }
 }
 
@@ -38,8 +38,8 @@
 
 .navigation-button {
   position: absolute;
-  top: 21px;
-  right: 18px;
+  top: 24px;
+  right: 20px;
   border: none;
   width: 24px;
   height: 20px;
@@ -83,7 +83,7 @@
   .navigation .navigation__list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding-top: 0;
   }
@@ -116,6 +116,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .navigation {
+    margin-left: auto;
+    min-width: 480px;
+  }
+
   .navigation__link {
     color: $white;
     font-size: 20px;

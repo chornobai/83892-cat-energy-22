@@ -4,6 +4,7 @@
   grid-template-rows: repeat(6, auto);
   padding: 27px 0 34px 0;
   background: $bg-grey-next;
+  overflow: hidden;
 }
 
 .example__title {

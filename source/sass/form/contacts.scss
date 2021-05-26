@@ -1,7 +1,7 @@
 .contacts {
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 13px 20px;
 
-  legend {
+  .contacts__legend {
     padding: 25px 0 35px 0;
   }
 }
@@ -14,10 +14,11 @@
 .contacts__item {
   display: flex;
   align-items: center;
+
   margin-bottom: 11px;
   position: relative;
 
-  .input:focus + svg {
+  .contacts__input:focus + svg {
     color: $green;
   }
 
@@ -37,8 +38,8 @@
 //error-input - ошибка в заполнении формы.
 
 .error-input {
-  .input {
-    border: 2px solid $error;
+  .contacts__input {
+    outline: 2px solid $error;
   }
 
   svg {
@@ -56,8 +57,14 @@
 
 .contacts__input {
   width: 100%;
+  padding: 14px 40px 13px 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  border: 1px solid $border;
   box-sizing: border-box;
-  padding: 14px 0 13px 14px;
 
   &::placeholder {
     font-family: "Oswald", "Arial", sans-serif;
@@ -66,29 +73,47 @@
     line-height: 18px;
     text-transform: uppercase;
   }
+
+  &:hover {
+    outline: 1px solid $grey-border-next;
+  }
+
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 0 66px 48px 70px;
+    padding: 0 66px 45px 70px;
 
-    legend {
-      padding: 27px 0 75px 0;
+    .contacts__legend {
+      padding: 27px 0 74px 0;
     }
   }
 
   .contacts__item {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      .contacts__label {
+        margin-right: 16px;
+      }
+
+      .contacts__input {
+        padding: 18px 40px 15px 18px;
+      }
+    }
   }
 
   .contacts__label {
     font-size: 20px;
     line-height: 30px;
-    margin-right: 17px;
+    margin-right: 19px;
   }
 
   .contacts__input {
-    padding: 21px 0 15px 21px;
+    padding: 18px 50px 15px 21px;
 
     &::placeholder {
       font-size: 20px;
@@ -107,7 +132,7 @@
     padding: 0;
     margin-bottom: 48px;
 
-    legend {
+    .contacts__legend {
       padding: 21px 0 75px 0;
     }
   }

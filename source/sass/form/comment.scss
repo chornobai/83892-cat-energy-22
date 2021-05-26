@@ -1,7 +1,7 @@
 .comment {
-  padding: 20px 25px 20px 20px;
+  padding: 18px 25px 21px 20px;
 
-  .program__form-legend {
+  .comment__legend {
     padding-bottom: 20px;
 
     &::after {
@@ -19,7 +19,7 @@
 .comment__textarea {
   width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 9px;
 
   &::placeholder {
     font-family: "Oswald", "Arial", sans-serif;
@@ -31,15 +31,15 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    padding: 20px 90px 65px 70px;
+    padding: 16px 90px 65px 69px;
 
-    .program__form-legend {
-      padding-bottom: 55px;
+    .comment__legend {
+      padding-bottom: 59px;
 
       &::after {
         content: "";
         position: absolute;
-        top: 18px;
+        top: 20px;
         left: 217px;
         width: 100vw;
         height: 2px;
@@ -49,7 +49,7 @@
       &::before {
         content: "";
         position: absolute;
-        top: 18px;
+        top: 20px;
         right: 222px;
         width: 100vw;
         height: 2px;
@@ -76,7 +76,7 @@
     padding: 0 25px 0 0;
     margin-bottom: 65px;
 
-    .program__form-legend {
+    .comment__legend {
       padding-bottom: 75px;
 
       &::after {
